@@ -41,18 +41,18 @@ public class MainActivity extends Activity implements
 
     @Override
     public void onLongPress(MotionEvent event) {
-        Toast toast = Toast.makeText(getApplicationContext(), "OnLongPress" + event.toString(), Toast.LENGTH_SHORT); toast.show();
+        Toast toast = Toast.makeText(getApplicationContext(), "OnLongPress" , Toast.LENGTH_SHORT); toast.show();
     }
 
     @Override
     public boolean onSingleTapUp(MotionEvent event) {
-        Toast toast = Toast.makeText(getApplicationContext(), "onSingleTapUp" + event.toString(), Toast.LENGTH_SHORT); toast.show();
+        Toast toast = Toast.makeText(getApplicationContext(), "onSingleTapUp" , Toast.LENGTH_SHORT); toast.show();
         return true;
     }
 
     @Override
     public boolean onDoubleTap(MotionEvent event) {
-        Toast toast = Toast.makeText(getApplicationContext(), "onDoubleTap" + event.toString(), Toast.LENGTH_SHORT); toast.show();
+        Toast toast = Toast.makeText(getApplicationContext(), "onDoubleTap" , Toast.LENGTH_SHORT); toast.show();
         return true;
     }
 
