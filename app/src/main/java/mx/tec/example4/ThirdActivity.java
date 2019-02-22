@@ -8,7 +8,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.widget.Toast;
 
-public class MainActivity extends Activity implements
+public class ThirdActivity extends Activity implements
         GestureDetector.OnGestureListener,
         GestureDetector.OnDoubleTapListener{
 
@@ -68,10 +68,10 @@ public class MainActivity extends Activity implements
                 if (Math.abs(diffX) > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
                     if (diffX > 0) {
                         Toast.makeText(getApplicationContext(), "Swipe Right." , Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(MainActivity.this, SecondActivity.class));
+                        startActivity(new Intent(ThirdActivity.this, MainActivity.class));
                     } else {
                         Toast.makeText(getApplicationContext(), "Swipe Left." , Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(MainActivity.this, ThirdActivity.class));
+                        startActivity(new Intent(ThirdActivity.this, SecondActivity.class));
                     }
                     result = true;
                 }
